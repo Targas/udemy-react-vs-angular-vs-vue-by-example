@@ -1,0 +1,24 @@
+$primary: #1EC9AC !default;
+
+$tablet: 769px !default;
+$desktop: 1000px !default;
+$widescreeen: 1192 !default;
+$fullhd: 1384px !default;
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+      @content;
+    }
+}
+  
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) and (max-width: #{$widescreen - 1px}) {
+        @content;
+    }
+}

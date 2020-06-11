@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="faq">
     <Sample />
   </div>
 </template>
@@ -8,13 +8,9 @@
 import Sample from '@/components/Sample.vue'
 
 export default {
-  name: 'Home',
+  name: 'Faq',
   components: {
     Sample
   }
 }
 </script>
-
-<style>
-  @import '../mq.scss';
-</style>
